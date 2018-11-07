@@ -156,7 +156,7 @@ func (a *amiAdapter) pinger(stop <-chan struct{}, errChan chan error) {
 		}
 
 		a.actionsChan <- ping
-		timer := time.NewTimer(3 * time.Second)
+		timer := time.NewTimer(1 * time.Second)
 		select {
 		case <-a.pingerChan:
 			timer.Stop()
