@@ -22,7 +22,7 @@ const (
 
 var (
 	actionTimeout = 1 * time.Second
-	dialTimeout   = 10 * time.Second
+	dialTimeout   = 30 * time.Second
 	pingInterval  = 50 * time.Second
 	sequence      uint64
 )
